@@ -43,13 +43,13 @@
 #ifdef __APPLE__
 #include <stdlib.h>
 #elif __linux__
-#include <malloc.h>
+#include <stdlib.c>
 // linux
 #elif __unix__ // all unices not caught above
-#include <malloc.h>
+#include <stdlib.c>
 // Unix
 #elif defined(_POSIX_VERSION)
-#include <malloc.h>
+#include <stdlib.c>
 #else
 #   error "Unknown compiler"
 #endif
